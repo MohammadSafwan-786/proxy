@@ -29,6 +29,9 @@ async def chat(request: Request):
         else:
             reply = f"🤖 You asked: '{user_input}'. Here's a smart reply!"
 
+            print("Reply:", reply)
+
+
         return JSONResponse(content={
             "choices": [{
                 "message": {
